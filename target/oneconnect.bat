@@ -1,0 +1,1 @@
+java -jar oneconnect-1.0-SNAPSHOT.jar
