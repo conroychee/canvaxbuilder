@@ -148,6 +148,9 @@ public class Main {
             }
             int pointX = Integer.parseInt(inputList.get(1));
             int pointY = Integer.parseInt(inputList.get(2));
+            if (!isWithinBoundary(pointX, pointY)) {
+                return true;
+            }
             String color = inputList.get(3);
             if (!color.matches("^[a-zA-Z]$")) {
                 System.err.println("Error: You must only enter single alphabet character except X for filling.");
